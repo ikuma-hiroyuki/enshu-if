@@ -10,3 +10,21 @@ Q7. 七五三判定プログラムを作成してください。
 
 age = input("年齢を入力してください: ")
 gender = input("性別を f か m で入力してください。\nf) 女性\nm) 男性\n: ")
+message = ""
+
+if gender == "f":
+    if age == "7":
+        message = "七歳女の子"
+    elif age == "3":
+        message = "三歳女の子"
+elif gender == "m":
+    if age == "5":
+        message = "五歳男の子"
+else:
+    print("不正な値です")
+    exit()
+
+if message:
+    print(message)
+else:
+    print("七五三ではありません")
